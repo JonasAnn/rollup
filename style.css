@@ -27,15 +27,49 @@ body{
 /* Contact us section styling */
 .contact{
     color: #000000;
-    background-image: linear-gradient(to bottom, #F5F5F5 70%, #8D8D8D 70%);
+    background-image: linear-gradient(to bottom, #F5F5F5 85%, #8D8D8D 85%);
     font-weight: 900;
-    padding: 4rem 2rem;
+    padding: 4rem 0 2rem 20rem;
+    position: relative;
+    height: 90vh;
+}
+/* left text */
+.contact__identifier{
+    font-size: 3rem;
+    transform: rotate(-90deg);
+    width: 30%;
+    position: absolute;
+    left: -10%;
+    top: 15%;    
+}
+.contact__identifier--line{
+    display: inline-block;
+    margin: .4rem 1.8rem;
+    width: 4rem;
+    height: .7rem;
+    background-color: #000000;
 }
 .contact__header{
     font-size: 5rem;
+    font-weight: inherit;
 }
 .contact__header--span{
     display: block;
+    margin: -2rem 0 0 15rem;
+}
+.contact__details{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact__details--label{
+    display: inline-block;
+    font-size: 2rem;
+}
+.contact__input{
+    border: none;
+    background-color: #E6E6E6;
 }
 
 

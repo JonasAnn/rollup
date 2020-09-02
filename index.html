@@ -11,16 +11,22 @@
     
 
 <section class="contact">
+    <!-- left text -->
+    <p class="contact__identifier">
+        Contact us  
+        <span class="contact__identifier--line"></span>
+    </p>
+
     <h4 class="contact__header">CONTACT
         <span class="contact__header--span">US</span>
     </h4>
     <form action="post" class="contact__form">
-        <div class="">
-            <label for="name">
+        <div class="contact__details">
+            <label for="name" class="contact__details--label">
                 NAME:
                 <input type="text" name="name" id="name" class="contact__input" required>
             </label>
-            <label for="email">
+            <label for="email" class="contact__details--label">
                 EMAIL:
                 <input type="email" name="email" id="email" class="contact__input" required>
             </label>
