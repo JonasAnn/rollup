@@ -3,18 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rollup</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 
+<section class="contact">
+    <h4 class="contact__header">CONTACT
+        <span class="contact__header--span">US</span>
+    </h4>
+    <form action="post" class="contact__form">
+        <div class="">
+            <label for="name">
+                NAME:
+                <input type="text" name="name" id="name" class="contact__input" required>
+            </label>
+            <label for="email">
+                EMAIL:
+                <input type="email" name="email" id="email" class="contact__input" required>
+            </label>
+        </div>
+        <div class="message">
+            <label for="message">
+                MESSAGE:
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+    </form>
 
+</section>
 
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__details">
+        <!-- footer contact box -->
+        <div class="footer__contact">
+            <p class="footer__header">
+                CONTACT INFO
+            </p>
+            <p class="footer__email">
+              <span class="footer__email--icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </span> 
+              CONTACT@THEROPILIS.COM
+            </p>
+        </div>
 
+        <!-- footer social media box -->
+        <div class="footer__socials">
+            <p class="footer__header">
+                SOCIAL NETWORKS
+            </p>
+            <div class="footer__icons--box">
+                <span class="footer__icon">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </span>
+                <span class="footer__icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </span>
+                <span class="footer__icon"> 
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </div>
 
+    <!-- Buy tickect section -->
+    <div class="footer__cta">
+        <a href="#" class="footer__cta--link">
+            <img src="./img/THE ROLL UP ATL WEB - BUY TICKETS STATIC BUTTON.png" alt="BUY TICKETS" class="footer__cta--image">
+        </a>
+    </div>
+</footer>
 
-
+<!-- script tag -->
     <script src="app.js"></script>
 </body>
 </html>
