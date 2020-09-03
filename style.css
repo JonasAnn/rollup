@@ -24,6 +24,44 @@ body{
     color: #000000;
     padding: 0 0 0 4rem;
 }
+/* styling for FAQ */
+.faq{
+    background-color: #F5F5F5;
+    padding: 5rem 4rem;
+}
+.faq__box{
+    display: flex;
+    justify-content: space-between;
+}
+.faq__question{
+    width: 35%;
+    align-self: start;
+}
+.faq__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faq__details{
+    width: 50%;
+    padding: 3rem 4.5rem;
+    background-color: #ffffff;
+    height: 70%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.faq__details p {
+    padding: 1rem 0;
+}
+.faq__header{
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+
+
 /* styling for sponsors */
 .sponsors{
     padding: 5rem 0 5rem;
