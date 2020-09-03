@@ -126,7 +126,7 @@ body{
 .counter__countdown {
     text-align: center;
     font-size: 60px;
-    margin: 3rem auto;
+    margin: 3rem auto 1rem;
     border: 2px solid #CF3132;
     width: 40%;
     display: flex;
@@ -138,6 +138,18 @@ body{
 #days{
     background-color: #CF3132;
     color: #f3f0f0;
+}
+.counter__names{
+    display: flex;
+    margin: 0 auto;
+    width: 40%;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+.counter__names span{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
 }
 
 /* styling for headliner section */
@@ -510,7 +522,7 @@ body{
 }
 /* Contact us section styling */
 .contact{
-    background-image: linear-gradient(to bottom, #F5F5F5 85%, #8D8D8D 85%);
+    background-image: linear-gradient(to bottom, rgb(245, 245, 245) 85%, #8D8D8D 85%);
     font-weight: 900;
     padding: 4rem 0 8rem 20rem;
     position: relative;
@@ -531,7 +543,9 @@ body{
     height: .7rem;
     background-color: #000000;
 }
-
+.contact__header--box{
+    margin: 3rem 0;
+}
 .contact__header{
     font-size: 5rem;
     font-weight: inherit;
