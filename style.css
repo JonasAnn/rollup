@@ -21,12 +21,60 @@ html {
 body{
     background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: #000000;
     padding: 0 0 0 4rem;
+}
+/* styling for sponsors */
+.sponsors{
+    padding: 5rem 0 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sponsors__header{
+    font-size: 4rem;
+    transform: rotate(-90deg);
+    font-weight: 900;
+    margin: 0 0 0 -9rem;
+}
+
+.sponsors__select{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sponsors__options{
+    width: 20%;
+    height: 15rem;
+}
+.sponsors__options1,
+.sponsors__options2,
+.sponsors__options3,
+.sponsors__options4,
+.sponsors__options5{
+    border-bottom: 1.5px solid #f3f0f0;
+}
+.sponsors__options1,
+.sponsors__options2,
+.sponsors__options3,
+.sponsors__options4{
+    border-right: 1.5px solid #f3f0f0;
+}
+
+.sponsors__options6,
+.sponsors__options7,
+.sponsors__options8,
+.sponsors__options9{
+    border-right: 1.5px solid #f3f0f0;
+}
+
+
+.sponsors__options:hover,
+.sponsors__options:active{
+    background-color: red;
 }
 /* Contact us section styling */
 .contact{
-    color: #000000;
     background-image: linear-gradient(to bottom, #F5F5F5 85%, #8D8D8D 85%);
     font-weight: 900;
     padding: 4rem 0 8rem 20rem;
@@ -102,7 +150,7 @@ body{
 /* FOOTER STYLING */
 .footer{
     background-color: #000000;
-    /* height: 50vh; */
+    color: #ffffff;
 }
 
 .footer__details{
