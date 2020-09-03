@@ -17,13 +17,88 @@ html {
     }
 }
 
-
 body{
     background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
     padding: 0 0 0 8rem;
 }
+/* styling for header */
+.header{
+    width: 100%;
+    background-image: url("./img/header.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+/* styling for counter */
+.counter{
+    padding: 4rem 0;
+    background-color: #F5F5F5;
+    position: relative;
+}
+#menuToggle{
+  display: block;
+  position: absolute;
+  background-color: #CF3132;
+  color: #f3f0f0;
+  left: -3rem;
+  z-index: 1;
+  padding: 1.5rem;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.counter__link{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;  
+    font-size: 2rem;
+    font-weight: 800;  
+}
+.counter__check{
+    display: none;
+}
+.counter__label{
+    background-color: #CF3132;
+    display: inline-block;
+}
+.counter__label--span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background: #ffffff;
+    position: relative;
+    z-index: 20;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+.counter__label--span:not(:last-child){
+    margin-bottom: 5px;
+}
+#menuToggle input:checked + label  .counter__label--span{
+    opacity: 1;
+  transform: rotate(45deg) translate(1px, -1px);
+}
+#menuToggle input:checked + label  .counter__label--span:nth-last-child(2){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+#menuToggle input:checked  + label  .counter__label--span:nth-last-child(1){
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#counter__list{
+    display: none;
+    list-style: none;
+}
+.counter__item{
+    padding: 1rem 0 0;
+}
+#menuToggle input:checked ~ #counter__list{
+    display: block;
+}
+
+
 /* styling for headliner section */
 .headliner{
     padding: 4rem 6rem;
@@ -164,7 +239,10 @@ body{
 }
 .map{
     width: 30%;
-    background: aquamarine;
+}
+.frame{
+    width: 100%;
+    height: 100%;
 }
 .about__image,
 .date__line--box,

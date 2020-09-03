@@ -8,12 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="counter">
+    <!-- header -->
+    <header class="header">
 
+    </header>
+    <!-- counter section -->
+    <section class="counter">
+        <div class="">
+            <nav role="navigation" class="counter__nav">
+                <div id="menuToggle">
+                    
+                    <input type="checkbox" class="counter__check" id="check" />
+
+                    <label for="check" class="counter__label">
+                        <span class="counter__label--span"></span>
+                        <span class="counter__label--span"></span>
+                        <span class="counter__label--span"></span>
+                    </label>
+
+                    <ul id="counter__list">
+                        <a href="#headliner" class="counter__link">
+                            <li class="counter__item">Event Info</li>
+                        </a>
+                        <a href="#faq" class="counter__link">
+                            <li class="counter__item">FAQs</li>
+                        </a>
+                        <a href="#contact" class="counter__link">
+                            <li class="counter__item">Contact Us</li>
+                        </a>
+                     </ul> 
+                     
+                </div>
+            </nav>
+        </div>
+        <div class="counter__timer">
+
+        </div>
     </section>
-    
+
     <!-- headliner -->
-    <section class="headliner">
+    <section class="headliner" id="headliner">
         <div class="headliner__top__line">
 
         </div>
@@ -97,15 +131,12 @@
             </div>
 
             <div class="map">
-
+                <iframe  src="https://maps.google.com/maps?hl=en&amp;q=1500 Tara place, Hampton, GA 30228+()&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="frame"></iframe>
             </div>
         </div>
 
         <p class="tickects__header">TICKETS</p>
 
-        <!-- <div class="about__image">
-            <img src="" alt="" class="about__photo">
-        </div> -->
     </section>
     <!-- tickets section -->
     <section class="tickets">
@@ -180,7 +211,7 @@
         </div>
     </section>
     <!-- section faq -->
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="faq__box">
             <div class="faq__question">
                 <img src="./img/mark.PNG" alt="mark sign" class="faq__image">
@@ -277,7 +308,7 @@
         </div>
     </section>
 <!-- contact us section -->
-<section class="contact">
+<section class="contact" id="contact">
     <!-- left text -->
     <p class="contact__identifier">
         Contact us  
