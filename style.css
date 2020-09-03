@@ -645,7 +645,7 @@ body{
 .footer__cta{
     text-align: center;
     background-color: #000000;
-    /* position: fixed; */
+    position: fixed;
     z-index: 30;
     width: 100%;
     bottom: 0;
