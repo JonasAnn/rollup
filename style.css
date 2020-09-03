@@ -24,9 +24,30 @@ body{
     color: #000000;
     padding: 0 0 0 8rem;
 }
+/* Styling for about section */
+.about{
+    padding: 2rem 2rem 2rem 6rem;
+    background-color: #D7D6D4; 
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.about__header{
+    font-size: 10rem;
+    font-weight: 900;
+}
+.about__paragraph,
+.location__paragraph{
+    font-weight: 800;
+}
+.location__header{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
 /* styling for tickets section */
 .tickets{
-    padding: 2rem 4rem;
+    /* padding: 2rem 4rem; */
+    padding: 0 4rem 2rem;
     background-image: linear-gradient(to bottom, #F5F5F5 24%, #908C8B 24%, #908C8B 80%,
     #F5F5F5 80%);
 }
