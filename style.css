@@ -24,14 +24,124 @@ body{
     color: #000000;
     padding: 0 0 0 8rem;
 }
+/* styling for headliner section */
+.headliner{
+    padding: 4rem 6rem;
+    background-color: #F5F5F5;
+    position: relative;
+    overflow: hidden;
+}
+.headliner__box{
+    display: flex;
+    justify-content: space-between;
+}
+.headliner__top__line{
+    height: .2rem;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    top: 0;
+    right: -10rem;
+    margin: 0 0 7rem;
+}
+.headliner__top__line::before{
+    content: '\00b7';
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.3rem;
+    display: flex;
+    font-weight: 900;
+    align-items: center;
+    font-size: 2.5rem;
+    justify-content: center;
+}
+.headliner__header{
+    font-weight: 900;
+    font-size: 10rem;
+}
+.headliner__header--span{
+    display: block;
+    color: #CF3132;
+    font-size: 25rem;
+    margin: -6rem 0 0;
+    
+}
+
+.headliner__header--baby{
+    margin: -10rem 0 -4rem;
+}
+.headliner__text--code{
+    width: 22%;
+}
+.headliner__bar-code{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.headliner__text{
+    width: 55%;
+    position: relative;
+    z-index: 10;
+}
+.headliner__image{
+    background-color: #000000;
+    width: 43%;
+    margin: 8rem 0 0;
+    position: relative;
+}
+.headliner__image::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -7.3rem;
+    right: 4rem;
+    height: 10rem;
+    width: 80%;
+    background-image: url("/img/code--image.PNG");
+    background-size: cover;
+}
+.artist__photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* Styling for about section */
 .about{
-    padding: 2rem 2rem 2rem 6rem;
+    padding: 2.5rem 0 2rem 6rem;
     background-color: #F5F3F4; 
     text-transform: uppercase;
     font-size: 3rem;
+    overflow: hidden;
     position: relative;
 }
+.about__top__line{
+    height: .2rem;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    top: 0;
+    right: -10rem;
+    margin: 0 0 1.5rem;
+}
+.about__top__line::before{
+    content: '\00b7';
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.3rem;
+    display: flex;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+
 .about__header{
     font-size: 13rem;
     font-weight: 900;
