@@ -53,13 +53,14 @@ body{
 }
 /* styling for counter */
 .counter{
-    padding: 4rem 0;
+    padding: 5rem 0;
     background-color: #F5F5F5;
     position: relative;
 }
 .counter__nav--box{
     position: absolute;
     left: -3rem;
+    top: 14rem;
     z-index: 40;
 }
 #menuToggle{
@@ -118,6 +119,25 @@ body{
 }
 #menuToggle input:checked ~ #counter__list{
     display: block;
+}
+.counter__timer{
+    background-color: transparent;
+}
+.counter__countdown {
+    text-align: center;
+    font-size: 60px;
+    margin: 3rem auto;
+    border: 2px solid #CF3132;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.counter__countdown p{
+    padding: 1.5rem;
+}
+#days{
+    background-color: #CF3132;
+    color: #f3f0f0;
 }
 
 /* styling for headliner section */
@@ -330,6 +350,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
+    background-image: url("./img/ticket1.PNG");
+    background-size: cover;
 
 }
 .ticket__header{
@@ -337,6 +360,7 @@ body{
     font-weight: 900;
 
 }
+
 .ticket__header--no{
     display: block;
     margin: -1rem 0 0;
@@ -410,7 +434,8 @@ body{
 }
 .instagram__header{
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 6rem;
+    padding: 0 0 2rem;
 }
 .instagram__posts{
     width: 60%;
@@ -422,7 +447,18 @@ body{
     height: 20rem;
     background-color: palegoldenrod;
 }
-
+.instagram__cta{
+    display: block;
+}
+.instagram__btn{
+    text-decoration: none;
+    color: #f3f0f0;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 1rem 2.5rem;
+    background-color: #CF3132;
+    text-align: center;
+}
 /* styling for sponsors */
 .sponsors{
     padding: 5rem 0 5rem;
@@ -595,7 +631,7 @@ body{
 .footer__cta{
     text-align: center;
     background-color: #000000;
-    position: fixed;
+    /* position: fixed; */
     z-index: 30;
     width: 100%;
     bottom: 0;
