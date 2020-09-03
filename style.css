@@ -22,8 +22,68 @@ body{
     background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 8rem;
 }
+/* styling for tickets section */
+.tickets{
+    padding: 2rem 4rem;
+    background-image: linear-gradient(to bottom, #F5F5F5 24%, #908C8B 24%, #908C8B 80%,
+    #F5F5F5 80%);
+}
+.tickects__header{
+    color: #CF3132;
+    font-size: 12rem;
+    font-weight: 900;
+}
+.ticket__box{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.ticket{
+    width: 30%;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+.ticket__title{
+    width: 100%;
+    padding: 3.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ticket__header{
+    font-size: 5rem;
+    font-weight: 900;
+
+}
+.ticket__header--no{
+    display: block;
+    margin: -1rem 0 0;
+    font-size: 7rem;
+}
+.ticket__list{
+    list-style: none;
+    text-transform: uppercase;
+    width: 50%;
+    margin: auto;
+}
+.ticket__item{
+    padding: 1.3rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.ticket__item:not(:last-child){
+    border-bottom: 1px solid #D7D6D4;
+}
+.ticket__price{
+    font-weight: 900;
+    font-size: 4rem;
+    padding: 3rem 0 7rem;
+}
+
+
 /* styling for FAQ */
 .faq{
     background-color: #F5F5F5;
@@ -47,10 +107,11 @@ body{
     width: 50%;
     padding: 3rem 4.5rem;
     background-color: #ffffff;
-    height: 70%;
+    height: 60rem;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
+    overflow: scroll;
 }
 .faq__details p {
     padding: 1rem 0;
@@ -60,7 +121,28 @@ body{
     font-size: 4rem;
 }
 
-
+/* styling fro instagram section */
+.instagram{
+    background-color: #F5F5F5;
+    padding: 5rem 4rem;
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+}
+.instagram__header{
+    font-weight: 900;
+    font-size: 4rem;
+}
+.instagram__posts{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.instagram__post{
+    width: 30%;
+    height: 20rem;
+    background-color: palegoldenrod;
+}
 
 /* styling for sponsors */
 .sponsors{
@@ -189,6 +271,7 @@ body{
 .footer{
     background-color: #000000;
     color: #ffffff;
+    padding: 3rem 0 27rem;
 }
 
 .footer__details{
@@ -228,6 +311,10 @@ body{
 /* footer cta */
 .footer__cta{
     text-align: center;
+    background-color: #000000;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
 }
 
 .footer__cta--link{
