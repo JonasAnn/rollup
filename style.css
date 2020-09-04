@@ -67,12 +67,9 @@ body{
     height: 100vh;
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
 }
-@media only screen and (max-width: 600px){
-    .header{
-        background-image: url("./img/header-mobile.png");
-    }
-}
+
 .header__nav{
     background-color: #CF3132;
     position: absolute;
@@ -92,11 +89,24 @@ body{
     background-color: #CF3132;
     padding: 2rem 0;
 }
+/* media query fro header */
+@media only screen and (max-width: 600px){
+    .header{
+        background-image:none;
+        background-color: burlywood;
+    }
+    .header__nav{
+        left: 2rem;
+        height: 50%;
+    }    
+
+}
 /* styling for counter */
 .counter{
     padding: 5rem 0;
     background-color: #F5F5F5;
     position: relative;
+    overflow: hidden;
 }
 .counter__nav--box{
     position: absolute;
@@ -127,7 +137,7 @@ body{
 }
 .counter__label--span{
     display: block;
-    width: 3.3rem;
+    width: 3.4rem;
     height: .4rem;
     background: #ffffff;
     position: relative;
@@ -148,7 +158,7 @@ body{
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 #menuToggle input:checked  + label  .counter__label--span:nth-last-child(1){
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(1px, -1px);
 }
 #counter__list{
     display: none;
@@ -196,11 +206,30 @@ body{
 /* media query for counter section */
 @media only screen and (max-width: 600px){
     .counter__countdown {
-        /* font-size: ; */
-        margin: 3rem auto 1rem;
+        margin: 3rem auto 1rem auto;
         width: 80%;
     }
-}    
+    .counter__names{
+        margin: 0 auto 0 auto;
+        width: 80%;
+    }
+    .counter__nav--box{
+        left: 2rem;
+        top: 1rem;
+    }
+    .counter__timer{
+        margin: 12rem 0 0;
+    }
+}  
+@media only screen and (max-width: 330px){
+    .counter__countdown {
+        width: 90%;
+    }
+    .counter__names{
+        width: 90%;
+    }
+
+}   
 /* styling for headliner section */
 .headliner{
     padding: 4rem 6rem;
@@ -319,8 +348,32 @@ body{
     .headliner__image{
         width: 100%;
     }
+    /* .headliner__image::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: -7.3rem;
+        right: 4rem;
+        height: 10rem;
+        width: 80%;
+        background-image: url("/img/code--image.PNG");
+        background-size: cover;
+    } */
 } 
-
+@media only screen and (max-width: 330px){
+    .headliner__header{
+        font-size: 4rem;
+    }
+    .headliner__header--span{
+        font-size: 10rem;
+    }
+    .headliner__text--code{
+        width: 25%;
+    }
+    .headliner__text{
+        margin: 0 0 5rem;
+    }
+}
 /* Styling for about section */
 .about{
     padding: 2.5rem 0 2rem 6rem;
@@ -448,7 +501,7 @@ body{
         width: 60%
     }
     .about__header{
-        font-size: 5.5rem;
+        font-size: 5.2rem;
     }
     .about__line--box{
         width: 100%;
@@ -457,8 +510,8 @@ body{
     }
     .about__paragraph{
         font-weight: 100;
-        font-size: 2.5rem;
-        padding: 1.6rem 0 0;
+        font-size: 2rem;
+        padding: 1.8rem 0 1rem;
         width: 95%;
     }
     .about__image{
@@ -485,7 +538,7 @@ body{
 }
 /* styling for tickets section */
 .tickets{
-    /* padding: 2rem 4rem; */
+    overflow: hidden;
     padding: 0 4rem 2rem;
     background-image: linear-gradient(to bottom, #F5F5F5 24%, #908C8B 24%, #908C8B 80%,
     #F5F5F5 80%);
@@ -575,6 +628,7 @@ body{
 .faq{
     background-color: #F5F5F5;
     padding: 5rem 4rem;
+    overflow: hidden;
 }
 .faq__box{
     display: flex;
@@ -609,6 +663,9 @@ body{
 }
 /* media query for faq */
 @media only screen and (max-width: 600px){
+    .faq{
+        padding: 5rem 4rem 2rem;
+    }
     .faq__box{
         flex-direction: column;
     }
@@ -628,6 +685,7 @@ body{
     color: #000000;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 .instagram__header{
     font-family: shapiro-dark;
@@ -656,12 +714,36 @@ body{
     background-color: #CF3132;
     text-align: center;
 }
+/* media query for instagram */
+@media only screen and (max-width: 600px){
+    .instagram{
+        flex-direction: column;
+    }
+    .instagram__details{
+        margin: 0 0 2rem;
+    }
+    .instagram__posts{
+        width: 100%;
+        flex-direction: column;
+    }
+    .instagram__post{
+        width: 100%;
+        height: 30rem;
+        margin: 3rem 0;
+    }
+
+    .instagram__btn{
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
+    }
+}
 /* styling for sponsors */
 .sponsors{
     padding: 5rem 0 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 .sponsors__header{
     font-size: 4rem;
@@ -705,12 +787,23 @@ body{
 .sponsors__options:active{
     background-color: red;
 }
+/* media query for sponsors */
+@media only screen and (max-width: 600px){
+    .sponsors__header{
+        font-size: 2.5rem;
+        padding: 1rem 0 0;
+    }
+    .sponsors__select{
+        width: 100%;
+        margin: 0 3rem 0 -5rem;
+    }
+}
 /* Contact us section styling */
 .contact{
     background-image: linear-gradient(to bottom, rgb(245, 245, 245) 85%, #8D8D8D 85%);
-    font-weight: 900;
     padding: 4rem 0 8rem 20rem;
     position: relative;
+    overflow: hidden;
 }
 /* left text */
 .contact__identifier{
@@ -738,15 +831,6 @@ body{
     height: 100%;
     object-fit: cover;
 }
-/* .contact__header{
-    font-size: 5rem;
-    font-family: shapiro-dark;
-    font-weight: inherit;
-}
-.contact__header--span{
-    display: block;
-    margin: -2rem 0 0 15rem;
-} */
 
 /* contact form */
 .contact__form{
@@ -790,12 +874,54 @@ body{
     margin: 0 0 0 .8rem;
 }
 
+/* media query for contact */
+@media only screen and (max-width: 600px){
+    .contact{
+        padding: 4rem 0 2rem 5rem;
+        background-image: linear-gradient(to bottom, rgb(245, 245, 245) 90%, #8D8D8D 90%);
+    }
+    .contact__identifier{
+        display: none;
+    }
+    .contact__header--box{
+        width: 50%;
+        margin: -3rem 0 -10rem -5rem;
+    }
+    .contact__form{
+        width: 95%;
+    }
+    .contact__details{
+       flex-direction: column;
+       width: 95%;
+    }
+    .contact__details--label{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .contact__input{
+        margin: 0 0 1.3rem .8rem;
+    }
+    .message{
+        width: 95%;
+        margin: auto;
+    }
+    .message__label{
+        font-size: 1.2rem;
+        margin: 2rem 0;
+    }
 
+}
+@media only screen and (max-width: 320px){
+    .contact__header--box{
+        margin: -3rem 0 -10rem -3rem;
+    }
+}
 /* FOOTER STYLING */
 .footer{
     background-color: #000000;
     color: #ffffff;
     padding: 3rem 0 16rem;
+    overflow: hidden;
 }
 
 .footer__details{
@@ -839,10 +965,11 @@ body{
 .footer__cta{
     text-align: center;
     background-color: #000000;
-    /* position: fixed; */
+    position: fixed;
     z-index: 30;
     width: 100%;
     bottom: 0;
+    overflow: hidden;
 }
 
 .footer__cta--link{
@@ -856,4 +983,76 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* media query for footer*/
+@media only screen and (max-width: 600px){
+    .footer{
+        padding: 3rem 0 12.5rem;
+    }
+    
+    .footer__details{
+        font-size: 1.7rem;
+        width: 95%;
+        margin: auto;
+        padding: 2rem 0 0 0;
+    }
+    
+    .footer__header{
+        font-size: 1.3rem;
+        padding: 0 0 1rem 0;
+    }
+    
+    .footer__email{
+        font-size: .7rem;
+    }
+    
+    .footer__email--icon{
+        padding: 0 ;
+    }
+    
+    /* footer icon */
+    .footer__icon--box{
+        font-size: 1.5rem;
+    }
+    
+    .footer__icon{
+        padding: 0 0 0 2rem;
+    }
+
+    
+    /* footer cta */
+    .footer__cta--link{
+        width: 45%;
+    }
+    
+}
+@media only screen and (max-width: 320px){
+ 
+    .footer__header{
+        font-size: 1rem;
+    }
+    
+    .footer__email{
+        font-size: .3rem;
+    }
+    
+    .footer__email--icon{
+        padding: 0 ;
+        font-size: 1rem;
+    }
+    
+    /* footer icon */
+    .footer__icon--box{
+        font-size: 1.5rem;
+    }
+    .footer__icons--box{
+        display: flex;
+        padding: 0 0 0 2rem;
+    }
+    
+    .footer__icon{
+        font-size: 1.3rem;
+        padding: 0 0 0 1rem;
+    }
+    
 }
