@@ -28,6 +28,12 @@ body{
     padding: 0 0 0 8rem;
     letter-spacing: 3px;
 }
+@media only screen and (max-width: 900px){
+    body {
+        padding:0 0 0 4rem;
+    }
+}
+
 @media only screen and (max-width: 600px){
     body {
         padding: 0;
@@ -67,7 +73,7 @@ body{
     height: 100vh;
     background-repeat: no-repeat;
     position: relative;
-    overflow: hidden;
+    
 }
 
 .header__nav{
@@ -92,8 +98,7 @@ body{
 /* media query fro header */
 @media only screen and (max-width: 600px){
     .header{
-        background-image:none;
-        background-color: burlywood;
+        background-image: url("/img/header-mobile.png");
     }
     .header__nav{
         left: 2rem;
@@ -106,7 +111,7 @@ body{
     padding: 5rem 0;
     background-color: #F5F5F5;
     position: relative;
-    overflow: hidden;
+    
 }
 .counter__nav--box{
     position: absolute;
@@ -204,6 +209,15 @@ body{
     font-size:1.8rem;
 }
 /* media query for counter section */
+@media only screen and (max-width: 900px){
+    .counter__countdown {
+        width: 50%;
+    }
+    .counter__names{
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width: 600px){
     .counter__countdown {
         margin: 3rem auto 1rem auto;
@@ -317,6 +331,21 @@ body{
     object-fit: cover;
 }
 /* media query for headliner section */
+@media only screen and (max-width: 900px){
+    .headliner__header{
+        font-size: 5rem;
+    }
+    .headliner__header--span{
+        font-size: 14rem;
+    }
+    .headliner__header--baby{
+        margin: -8rem 0 -3rem;
+    }
+    .headliner__text--code{
+        width: 40%;
+    }
+}
+
 @media only screen and (max-width: 600px){
     .headliner{
         padding: 3rem 4rem;
@@ -348,17 +377,6 @@ body{
     .headliner__image{
         width: 100%;
     }
-    /* .headliner__image::before{
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: -7.3rem;
-        right: 4rem;
-        height: 10rem;
-        width: 80%;
-        background-image: url("/img/code--image.PNG");
-        background-size: cover;
-    } */
 } 
 @media only screen and (max-width: 330px){
     .headliner__header{
@@ -486,6 +504,25 @@ body{
     display: flex;   
 }
 /* media query for about section */
+@media only screen and (max-width: 900px){
+    .about__header{
+        font-size: 6rem;
+    }
+    .about__line--box{
+        height: auto;
+    }
+    .about__paragraph{
+        font-size: 2.3rem;
+        width: 95%;
+    }
+    .about__location{
+        flex-direction: column;
+    }
+    .map{
+        width: 70%;
+        margin: 2rem 0 0;
+    }
+}
 @media only screen and (max-width: 600px){
     .about{
         padding: 2.5rem 0 2rem 4rem;
@@ -517,9 +554,7 @@ body{
     .about__image{
         width: 40%;
     }
-    .about__location{
-        flex-direction: column;
-    }
+
     .location__line--box{
         width: 85%;
         margin: 1.5rem 0 0 -1rem;
@@ -538,7 +573,6 @@ body{
 }
 /* styling for tickets section */
 .tickets{
-    overflow: hidden;
     padding: 0 4rem 2rem;
     background-image: linear-gradient(to bottom, #F5F5F5 24%, #908C8B 24%, #908C8B 80%,
     #F5F5F5 80%);
@@ -603,6 +637,17 @@ body{
     padding: 2.5rem 0 7rem;
 }
 /* media query for ticket section */
+@media only screen and (max-width: 900px){
+    .tickets{
+        padding: 0 2rem 2rem;
+    }
+    .tickects__header{
+        font-size: 6rem;
+    }
+    .ticket__header{
+        font-size: 3.5rem;
+    }
+}
 @media only screen and (max-width: 600px){
     .tickects__header{
         font-size: 5.5rem;
