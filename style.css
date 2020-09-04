@@ -294,7 +294,7 @@ body{
     }
     .headliner__top__line{
         margin: 0 0 5rem;
-        right: -3.6rem;
+        right: -3.8rem;
     }
     .headliner__box{
         flex-direction: column;
@@ -438,8 +438,14 @@ body{
         padding: 2.5rem 0 2rem 4rem;
     }
     .about__top__line{
-        right: -3.6rem;
+        right: -3.8rem;
         margin: 0 0 5rem;
+    }
+    .about__box{
+        width: 95%;
+    }
+    .about__header--text{
+        width: 60%
     }
     .about__header{
         font-size: 5.5rem;
@@ -451,8 +457,30 @@ body{
     }
     .about__paragraph{
         font-weight: 100;
-        padding: 0;
+        font-size: 2.5rem;
+        padding: 1.6rem 0 0;
         width: 95%;
+    }
+    .about__image{
+        width: 40%;
+    }
+    .about__location{
+        flex-direction: column;
+    }
+    .location__line--box{
+        width: 85%;
+        margin: 1.5rem 0 0 -1rem;
+    }
+    .location__header{
+        font-size: 2.8rem;
+        margin: 0 0 -.5rem;
+    }
+    .location__paragraph{
+        font-size: 2.5rem;
+    }
+    .map{
+        width: 90%;
+        margin: 2rem 0 0;
     }
 }
 /* styling for tickets section */
