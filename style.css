@@ -607,7 +607,20 @@ body{
     font-family: shapiro-dark;
     font-size: 4rem;
 }
-
+/* media query for faq */
+@media only screen and (max-width: 600px){
+    .faq__box{
+        flex-direction: column;
+    }
+    .faq__question{
+        width: 90%;
+        align-self: center;
+        margin: 0 0 3rem;
+    }
+    .faq__details{
+        width: 100%;
+    }
+}
 /* styling fro instagram section */
 .instagram{
     background-color: #F5F5F5;
