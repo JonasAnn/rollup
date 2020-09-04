@@ -362,10 +362,10 @@ body{
     }
     .headliner__header--span{
         font-size: 12rem;
-        margin: -3.5rem 0 0;    
+        margin: -2.5rem 0 0;    
     }
     .headliner__header--baby{
-        margin: -6rem 0 -2rem;
+        margin: -4rem 0 -2rem;
     }
     .headliner__text--code{
         width: 30%;
@@ -488,7 +488,7 @@ body{
 .location__line--box{
     width: 70%;
     height: 30%;
-    margin: 1rem 0 1rem -1rem;
+    margin: 1.8rem 0 1rem -1rem;
 }
 .about__photo,
 .date__line,
@@ -541,9 +541,9 @@ body{
         font-size: 5.2rem;
     }
     .about__line--box{
-        width: 100%;
+        width: 90%;
         height: 40%;
-        margin: 1.5rem 0 0 -1rem;
+        margin: 2.5rem 0 0 -1rem;
     }
     .about__paragraph{
         font-weight: 100;
@@ -557,7 +557,7 @@ body{
 
     .location__line--box{
         width: 85%;
-        margin: 1.5rem 0 0 -1rem;
+        margin: 2.5rem 0 0 -1rem;
     }
     .location__header{
         font-size: 2.8rem;
@@ -569,6 +569,11 @@ body{
     .map{
         width: 90%;
         margin: 2rem 0 0;
+    }
+}
+@media only screen and (max-width: 320px){
+    .about__header--text{
+        width: 70%
     }
 }
 /* styling for tickets section */
