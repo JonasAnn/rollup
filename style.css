@@ -549,8 +549,28 @@ body{
     font-size: 2.7rem;
     padding: 2.5rem 0 7rem;
 }
-
-
+/* media query for ticket section */
+@media only screen and (max-width: 600px){
+    .tickects__header{
+        font-size: 5.5rem;
+    }
+    .ticket__box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ticket{
+        width: 100%;
+    }
+    .ticket:not(:last-child){
+        margin: 0 0 3rem;
+    }
+    .ticket__list{
+        padding: 2rem 0 0 ;
+    }
+    .ticket__item{
+        font-size: 1.8rem;
+    }
+}
 /* styling for FAQ */
 .faq{
     background-color: #F5F5F5;
