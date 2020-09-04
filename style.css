@@ -15,12 +15,23 @@ html {
         font-size: 50%;
     }
 }
+@media only screen and (max-width: 600px){
+    html {
+        font-size: 40%;
+    }
+}
+
 
 body{
     background-color: #ffffff;
     color: #000000;
     padding: 0 0 0 8rem;
     letter-spacing: 3px;
+}
+@media only screen and (max-width: 600px){
+    body {
+        padding: 0;
+    }
 }
 
 @font-face{
@@ -56,6 +67,11 @@ body{
     height: 100vh;
     background-repeat: no-repeat;
     position: relative;
+}
+@media only screen and (max-width: 600px){
+    .header{
+        background-image: url("./img/header-mobile.png");
+    }
 }
 .header__nav{
     background-color: #CF3132;
@@ -151,8 +167,7 @@ body{
 }
 .counter__countdown {
     font-family: shapiro-feather;
-    text-align: center;
-    font-size: 60px;
+    font-size: 6rem;
     margin: 3rem auto 1rem;
     border: 2px solid #CF3132;
     width: 40%;
@@ -178,7 +193,14 @@ body{
     display: block;
     font-size:1.8rem;
 }
-
+/* media query for counter section */
+@media only screen and (max-width: 600px){
+    .counter__countdown {
+        /* font-size: ; */
+        margin: 3rem auto 1rem;
+        width: 80%;
+    }
+}    
 /* styling for headliner section */
 .headliner{
     padding: 4rem 6rem;
@@ -216,7 +238,6 @@ body{
     justify-content: center;
 }
 .headliner__header{
-    font-weight: 700;
     font-size: 7rem;
     font-family: shapiro-dark;
 }
@@ -266,6 +287,40 @@ body{
     height: 100%;
     object-fit: cover;
 }
+/* media query for headliner section */
+@media only screen and (max-width: 600px){
+    .headliner{
+        padding: 3rem 4rem;
+    }
+    .headliner__top__line{
+        margin: 0 0 5rem;
+        right: -3.6rem;
+    }
+    .headliner__box{
+        flex-direction: column;
+    }
+    .headliner__header{
+        font-size: 5.5rem;
+    }
+    .headliner__header--span{
+        font-size: 12rem;
+        margin: -3.5rem 0 0;    
+    }
+    .headliner__header--baby{
+        margin: -6rem 0 -2rem;
+    }
+    .headliner__text--code{
+        width: 30%;
+    }
+    .headliner__text{
+        width: 100%;
+        margin: 0 0 7.5rem;
+    }
+    .headliner__image{
+        width: 100%;
+    }
+} 
+
 /* Styling for about section */
 .about{
     padding: 2.5rem 0 2rem 6rem;
@@ -303,7 +358,6 @@ body{
 .about__header{
     font-family: "shapiro-dark";
     font-size: 8rem;
-    font-weight: 700;
     margin: 0 0 -2.7rem;
 }
 .about__logo{
@@ -378,7 +432,29 @@ body{
 .time__box{
     display: flex;   
 }
-
+/* media query for about section */
+@media only screen and (max-width: 600px){
+    .about{
+        padding: 2.5rem 0 2rem 4rem;
+    }
+    .about__top__line{
+        right: -3.6rem;
+        margin: 0 0 5rem;
+    }
+    .about__header{
+        font-size: 5.5rem;
+    }
+    .about__line--box{
+        width: 100%;
+        height: 40%;
+        margin: 1.5rem 0 0 -1rem;
+    }
+    .about__paragraph{
+        font-weight: 100;
+        padding: 0;
+        width: 95%;
+    }
+}
 /* styling for tickets section */
 .tickets{
     /* padding: 2rem 4rem; */
