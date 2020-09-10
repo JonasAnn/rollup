@@ -842,7 +842,7 @@ body{
 
 .sponsors__options:hover,
 .sponsors__options:active{
-    background-color: red;
+    background-color: #ec6e00;
 }
 /* media query for sponsors */
 @media only screen and (max-width: 600px){
