@@ -77,7 +77,7 @@ body{
     object-fit: cover;
 }
 .header__nav{
-    background-color: #CF3132;
+    background-color: #ec6e00;
     position: absolute;
     top: 3rem;
     left: -3rem;
@@ -92,7 +92,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #CF3132;
+    background-color: #ec6e00;
     padding: 2rem 0;
 }
 /* media query fro header */
@@ -127,7 +127,7 @@ body{
 }
 #menuToggle{
   display: block;
-  background-color: #CF3132;
+  background-color: #ec6e00;
   color: #f3f0f0;
   padding: 1.5rem;
   -webkit-user-select: none;
@@ -143,7 +143,7 @@ body{
     display: none;
 }
 .counter__label{
-    background-color: #CF3132;
+    background-color: #ec6e00;
     display: inline-block;
 }
 .counter__label--span{
@@ -190,7 +190,7 @@ body{
     font-family: shapiro-feather;
     font-size: 6rem;
     margin: 3rem auto 1rem;
-    border: 2px solid #CF3132;
+    border: 2px solid #ec6e00;
     width: 43.5%;
     display: flex;
     justify-content: space-between;
@@ -199,7 +199,7 @@ body{
     padding: 1.5rem;
 }
 #days{
-    background-color: #CF3132;
+    background-color: #ec6e00;
     color: #f3f0f0;
 }
 .counter__names{
@@ -293,7 +293,7 @@ body{
 }
 .headliner__header--span{
     display: block;
-    color: #CF3132;
+    color: #ec6e00;
     font-size: 20rem;
     margin: -6rem 0 0;
     
@@ -590,7 +590,7 @@ body{
     #F5F5F5 80%);
 }
 .tickects__header{
-    color: #CF3132;
+    color: #ec6e00;
     font-size: 10.5rem;
     font-weight: 700;
     font-family: shapiro-dark;
@@ -768,7 +768,7 @@ body{
     font-family: shapiro-dark;
     font-size: 2rem;
     padding: 1rem 2.5rem;
-    background-color: #CF3132;
+    background-color: #ec6e00;
     text-align: center;
 }
 /* media query for instagram */
@@ -990,7 +990,7 @@ body{
 }
 
 .footer__header{
-    color: #CF3132;
+    color: #ec6e00;
     font-family: shapiro-dark;
     font-size: 2rem;
     padding: 0 0 1.5rem 0;
