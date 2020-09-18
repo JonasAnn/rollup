@@ -263,8 +263,8 @@ body{
     justify-content: space-between;
 }
 /* Just added this margin since we have more than one performer */
-.headliner__box::not(:last-child){
-    margin: 0 0 8rem ;
+.headliner__box:not(:last-child){
+    margin: 0 0 10rem ;
 }
 .headliner__top__line{
     height: .2rem;
