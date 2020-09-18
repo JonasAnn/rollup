@@ -291,17 +291,22 @@ body{
     font-size: 7rem;
     font-family: shapiro-dark;
 }
-.headliner__header--span{
+/* .headliner__header--span{
     display: block;
     color: #ec6e00;
     font-size: 20rem;
-    margin: -6rem 0 0;
-    
+    margin: -6rem 0 0; 
+} */
+.headliner__header--span{
+    display: block;
+    color: #ec6e00;
+    font-size: 11.5rem;
+    margin: -4rem 0 0; 
 }
 
-.headliner__header--baby{
+/* .headliner__header--baby{
     margin: -10rem 0 -4rem;
-}
+} */
 .headliner__text--code{
     width: 22%;
 }
@@ -310,8 +315,14 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.headliner__text{
+/* .headliner__text{
     width: 55%;
+    position: relative;
+    z-index: 10;
+} */
+
+.headliner__text{
+    width: 60%;
     position: relative;
     z-index: 10;
 }
@@ -368,7 +379,7 @@ body{
         font-size: 5.5rem;
     }
     .headliner__header--span{
-        font-size: 12rem;
+/*         font-size: 12rem; */
         margin: -2.5rem 0 0;    
     }
     .headliner__header--baby{
