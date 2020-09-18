@@ -292,7 +292,7 @@ body{
     justify-content: center;
 }
 .headliner__header{
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-family: shapiro-dark;
 }
 .headliner__header--span{
@@ -380,7 +380,7 @@ body{
         flex-direction: column;
     }
     .headliner__header{
-        font-size: 5.5rem;
+        font-size: 5.3rem;
     }
     .headliner__header--span{
         font-size: 12rem;
