@@ -262,6 +262,10 @@ body{
     display: flex;
     justify-content: space-between;
 }
+/* Just added this margin since we have more than one performer */
+.headliner__box::not(:last-child){
+    margin: 0 0 2rem ;
+}
 .headliner__top__line{
     height: .2rem;
     width: 100%;
