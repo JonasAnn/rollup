@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after{
@@ -621,17 +620,14 @@ body{
     text-align: center;
     background-color: #E6E6E6;
 }
-.ticket__title{
+.ticket__title1,
+.ticket__title2,
+.ticket__title3{
     width: 100%;
-    padding: 3.5rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #E6E6E6;
-    background-image: url("./img/ticket1.PNG");
-    background-size: cover;
-    font-family: shapiro-dark;
-
+}
+.ticket__image{
+    object-fit: cover;
+    width: 100%;
 }
 .ticket__header{
     font-size: 5rem;
