@@ -39,3 +39,15 @@ document.getElementById("sec").innerHTML = addZero(seconds);
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  setTimeout(function(){
+    document.querySelector(".popup__area").classList.remove("toggle__hidden");
+  }, 1000);
+});
+
+document.querySelector(".popup__close").addEventListener("click", () => {
+  document.querySelector(".popup__area").classList.add("toggle__hidden");
+})
+

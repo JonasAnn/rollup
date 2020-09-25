@@ -110,6 +110,35 @@ body{
     }
 }
 
+/* styling for popup */
+.popup__area{
+    position:fixed;
+    top: 0;
+    height: 100%;
+    z-index: 30;
+    background: rgba(0,0,0,0.85);
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 2rem 1rem;   
+    overflow:auto;
+}
+
+.popup__close{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor:pointer;
+}
+
+/* Generic style */
+
+.toggle__hidden{
+    display:none;
+}
+
 
 /* styling for counter */
 .counter{
